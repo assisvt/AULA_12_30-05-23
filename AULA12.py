@@ -49,16 +49,21 @@ else:
     print('Não tem número ímpar.')
 --
 
-# FT: 10:25/10:37
-lista = list() # OU lista = []
+''' - Construa o programa que encontre o menor valor e o maior valor de um conjunto
+de valores inteiros digitados pelo usuário. A condição de saída será o valor -1
+que não será considerado na pesquisa.'''
+
+lista = [] # ou lista = list() 
 print('Digite [-1] para sair')
 while True:
-    num = int(input('Valor inteiro: '))
-    if num == -1:
+    valor = int(input('Valor inteiro: '))
+    if valor == -1:
         break
-    lista.append(num)  # Armazena o valor final da lista, conforme vai lendo nesse caso
-menor = min(lista)
-maior = max(lista)
+    lista.append(valor)  # Armazena o valor final da lista, conforme vai lendo os valores do input nesse caso
+menor = min(lista)  # Atribui como variável o menor valor da lista
+maior = max(lista)  # Atribui como variável o maior valor da lista
 print('Menor:', menor)
 print('Maior:', maior)
+''' --- ALTERAÇÕES:
+a. Mostre também a quantidade de valores armazenados na lista (digitados).
 
